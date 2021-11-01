@@ -24,4 +24,8 @@ class HazelcastCommandlineClient < Formula
   test do
     system "true"
   end
+
+  test do
+    system "true"
+  end
 end
