@@ -6,15 +6,23 @@ class HazelcastCommandlineClient < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/utku-caglayan/homebrew-hazelcast-clc/releases/download/hazelcast-commandline-client-6"
-    sha256 cellar: :any_skip_relocation, catalina:     "f19060011d6a88022e1681f5ed3c721d8081e88c518de9dd1cfeea3d178076ee"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2daeb8b875df2ff83cbafa2eb8b34ee929b93b9d30e10cc343a85931292e24bd"
+    sha256 arm64_monterey: "01e1dc0704d6606839599ef423d34767997725d8e25110ce848e20434681efc5"
+    sha256 arm64_big_sur:  "1adc0340427aeef3afbb0980b6fcea4edcfa6127ea44846615065b68a27544a8"
+    sha256 monterey:       "ac8dd353f5d735a7c67317d612bdf77112b596b541248472f39cd907cb3eb2f0"
+    sha256 big_sur:        "6635c9eac78d922dab5d49229ac667147d8b38e3535142afe647647dedcee260"
+    sha256 catalina:       "b7bab47a69503d9f6a949c7b27db4e4545d2902b0ca7a5a4fd02071b7ad2cb9b"
+    sha256 mojave:         "7d17fffd0920dbfdd79c68c38f375fae4da7dbaf4965f8d6a2876bbb9bc87e84"
+    sha256 x86_64_linux:   "a964c718912feab17767ba90a09d15d12c2bb3240709cf70b751f413f2d72d87"
   end
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    system "go", "build", "-o", "hzc", *std_go_args(ldflags: "-s -w")
+  end
+
+  test do
+    system "true"
   end
 
   test do
