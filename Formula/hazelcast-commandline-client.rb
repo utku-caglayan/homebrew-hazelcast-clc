@@ -22,6 +22,14 @@ class HazelcastCommandlineClient < Formula
     # cp "#{bash_completion}/bash_completion.bash", zsh_completion
   end
 
+  def post_install
+    ohai "Example usages:
+3* `hzc` - start interactive shell
+4* `hzc map --name my-map put --key hello --value world` - put entry into map directly
+5* `hzc --help` - print help"
+    exec "hzc"
+  end
+
   test do
     system "true"
   end
