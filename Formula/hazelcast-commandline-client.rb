@@ -7,9 +7,9 @@ class HazelcastCommandlineClient < Formula
 
   bottle do
     root_url "https://github.com/utku-caglayan/homebrew-hazelcast-clc/releases/download/hazelcast-commandline-client-6"
-    rebuild 3
-    sha256 cellar: :any_skip_relocation, catalina:     "591f374034ac48a4ced4a66f5180ebaf993a87ecba0231964ea2e7e04b120ce4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "be22f1211ad393dc64bc127fea6cd14ea62c61988b963b1f6c5c6e7b5be94b92"
+    rebuild 4
+    sha256 cellar: :any_skip_relocation, catalina:     "17ec242c6fa88a16566ec55454901c94b5adaa9dbbcd09dbc0a3d15875fc6db7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8bc8809005a75e7afd748a99522c7ae275595bd643c7119a412bc4046c593a72"
   end
 
   depends_on "go" => :build
