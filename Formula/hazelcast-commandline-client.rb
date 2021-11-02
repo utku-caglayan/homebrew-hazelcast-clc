@@ -15,11 +15,12 @@ class HazelcastCommandlineClient < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "hzc", *std_go_args(ldflags: "-s -w")
-  end
-
-  test do
-    system "true"
+    system "make"
+    bin.install 'hzc'
+     # install the completion script first because it is inside "contrib"
+    bash_completion.install "extras/bash_completion.sh"
+    zsh_completion.install "extras/zsh_completion.zsh" => "_hzc"
+    #cp "#{bash_completion}/bash_completion.bash", zsh_completion
   end
 
   test do
