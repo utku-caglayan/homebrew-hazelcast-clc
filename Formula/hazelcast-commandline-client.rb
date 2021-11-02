@@ -16,11 +16,10 @@ class HazelcastCommandlineClient < Formula
 
   def install
     system "make"
-    bin.install 'hzc'
-     # install the completion script first because it is inside "contrib"
+    bin.install "hzc"
     bash_completion.install "extras/bash_completion.sh"
     zsh_completion.install "extras/zsh_completion.zsh" => "_hzc"
-    #cp "#{bash_completion}/bash_completion.bash", zsh_completion
+    # cp "#{bash_completion}/bash_completion.bash", zsh_completion
   end
 
   test do
