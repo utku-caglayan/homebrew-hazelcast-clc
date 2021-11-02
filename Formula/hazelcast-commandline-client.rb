@@ -23,11 +23,11 @@ class HazelcastCommandlineClient < Formula
   end
 
   def post_install
+    opoo "See https://docs.brew.sh/Shell-Completion to enable autocompletion"
     ohai "Example usages:
-3* `hzc` - start interactive shell
-4* `hzc map --name my-map put --key hello --value world` - put entry into map directly
-5* `hzc --help` - print help"
-    exec "hzc"
+* `hzc` - start interactive shell
+* `hzc map --name my-map put --key hello --value world` - put entry into map directly
+* `hzc --help` - print help"
   end
 
   test do
