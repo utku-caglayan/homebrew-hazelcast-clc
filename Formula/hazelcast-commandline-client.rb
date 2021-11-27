@@ -1,6 +1,6 @@
 class HazelcastCommandlineClient < Formula
   desc "Home of Hazelcast Command-line Client Project"
-  homepage "https://github.com/hazelcast/hazelcast-commandline-client/tree/interactive-clc"
+  homepage "https://github.com/hazelcast/hazelcast-commandline-client/tree/main"
   url "https://github.com/utku-caglayan/hazelcast-commandline-client/archive/refs/tags/v1.0.0-interactive-test.2.tar.gz"
   sha256 "258ab61febac914429cad3f0b00f692228ec95543d5fafe43c9002094be60f66"
   license "Apache-2.0"
