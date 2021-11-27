@@ -6,8 +6,6 @@ class HazelcastCommandlineClient < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/utku-caglayan/homebrew-hazelcast-clc/releases/download/hazelcast-commandline-client-6"
-    rebuild 4
     sha256 cellar: :any_skip_relocation, catalina:     "17ec242c6fa88a16566ec55454901c94b5adaa9dbbcd09dbc0a3d15875fc6db7"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "8bc8809005a75e7afd748a99522c7ae275595bd643c7119a412bc4046c593a72"
   end
