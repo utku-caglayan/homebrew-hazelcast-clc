@@ -2,12 +2,8 @@ class HazelcastCommandlineClient < Formula
   desc "Home of Hazelcast Command-line Client Project"
   homepage "https://github.com/hazelcast/hazelcast-commandline-client/tree/interactive-clc"
   url "https://github.com/utku-caglayan/hazelcast-commandline-client/archive/refs/tags/v1.0.0-interactive-test.2.tar.gz"
+  sha256 "a05ec92566fc352dfdeefd2b7ab535beb5ccc59bfde1f45c279353e24a8ae755"
   license "Apache-2.0"
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, catalina:     "17ec242c6fa88a16566ec55454901c94b5adaa9dbbcd09dbc0a3d15875fc6db7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8bc8809005a75e7afd748a99522c7ae275595bd643c7119a412bc4046c593a72"
-  end
 
   depends_on "go" => :build
 
