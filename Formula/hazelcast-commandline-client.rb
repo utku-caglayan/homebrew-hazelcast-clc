@@ -24,7 +24,7 @@ class HazelcastCommandlineClient < Formula
   def post_install
     completion_warning = <<~EOS
 ⚠️  To have superior experience, enable autocompletion on Brew.
-You need to enable autocompletion only once for Brew. If it is already enabled, you can skip this part. 
+You need to enable autocompletion just once for Brew. If it is already enabled, you can skip this part. 
 
 ▪ For Bash users: 
 `brew install bash-completion` and follow the printed \"Caveats\" section. Example \"Caveats\" instructions:
