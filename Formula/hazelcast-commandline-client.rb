@@ -1,7 +1,7 @@
 class HazelcastCommandlineClient < Formula
   desc "Home of Hazelcast Command-line Client Project"
-  homepage "https://github.com/hazelcast/hazelcast-commandline-client/tree/main"
-  url "https://github.com/hazelcast/hazelcast-commandline-client/archive/refs/tags/v1.0.0-test.8.tar.gz"
+  homepage "https://github.com/utku-caglayan/hazelcast-commandline-client/tree/pre-testing"
+  url "https://github.com/utku-caglayan/hazelcast-commandline-client/archive/refs/tags/v1.0.0-test.9.tar.gz"
   sha256 "6ae81f4305e66fe1c7afc854d7174e5828b77260fa0c296fb4ff26a71139e491"
   license "Apache-2.0"
 
