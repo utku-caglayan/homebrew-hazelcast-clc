@@ -22,9 +22,23 @@ class HazelcastCommandlineClient < Formula
   end
 
   def post_install
-    opoo "See https://docs.brew.sh/Shell-Completion to enable autocompletion"
+    completion_warning = <<~EOS
+⚠️  To have superior experience, enable autocompletion on Brew.
+
+▪ For Bash users: 
+`brew install bash-completion` and follow the printed \"Caveats\" section. Example \"Caveats\" instructions:
+  Add the following line to your ~/.bash_profile:
+  [[ -r \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\" ]] && . \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\"
+  !! Note that paths may differ depending on your installation, so you should follow the Caveats section on your system."
+
+▪ For Zsh users:
+Follow https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh  
+
+  EOS
+    print completion_warning
+   
     ohai "Example usages:
-* `hzc` - start an interactive shell
+* `hzc` - start an interactive shell 🚀
 * `hzc map --name my-map put --key hello --value world` - put entry into map"
   end
 
