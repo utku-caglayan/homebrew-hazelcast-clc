@@ -2,7 +2,7 @@ class HazelcastCommandlineClient < Formula
   desc "Home of Hazelcast Command-line Client Project"
   homepage "https://github.com/utku-caglayan/hazelcast-commandline-client/tree/pre-testing"
   url "https://github.com/utku-caglayan/hazelcast-commandline-client/archive/refs/tags/v1.0.0-test.9.tar.gz"
-  sha256 "6ae81f4305e66fe1c7afc854d7174e5828b77260fa0c296fb4ff26a71139e491"
+  sha256 "0ee559b88b524b2eee2ebb39b76161f3403a41c4a49d33e2fe7044e56e6abc6e"
   license "Apache-2.0"
 
   depends_on "go" => :build
