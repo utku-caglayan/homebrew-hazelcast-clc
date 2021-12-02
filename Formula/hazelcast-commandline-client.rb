@@ -5,6 +5,12 @@ class HazelcastCommandlineClient < Formula
   sha256 "0ee559b88b524b2eee2ebb39b76161f3403a41c4a49d33e2fe7044e56e6abc6e"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/utku-caglayan/homebrew-hazelcast-clc/releases/download/hazelcast-commandline-client-9"
+    sha256 cellar: :any_skip_relocation, catalina:     "26bf6247bc25b15b9c6a415e9cbbcf229f750ac5e8d195e702f0aa297a421485"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0b24ec4645abbd8a084e05d426ebb074c31a2c3d737184c2ef141437b93632b9"
+  end
+
   depends_on "go" => :build
 
   def install
