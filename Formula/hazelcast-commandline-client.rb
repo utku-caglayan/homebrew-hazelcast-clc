@@ -2,7 +2,7 @@ class HazelcastCommandlineClient < Formula
   desc "Home of Hazelcast Command-line Client Project"
   homepage "https://github.com/hazelcast/hazelcast-commandline-client/tree/main"
   url "https://github.com/hazelcast/hazelcast-commandline-client/archive/refs/tags/v1.0.0-test.9.tar.gz"
-  sha256 "0ee559b88b524b2eee2ebb39b76161f3403a41c4a49d33e2fe7044e56e6abc6e"
+  sha256 "53268981fdcd4e3459de406ee1ff82cb23bb5686fdae12278aaa49a64e137de0"
 
   depends_on "go" => :build
 
