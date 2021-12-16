@@ -22,14 +22,15 @@ class HazelcastCommandlineClient < Formula
 
   def post_install
     completion_warning = <<~EOS
-      ⚠️ To have superior experience, enable autocompletion on Brew. ⚠️
+      ⚠️  To have superior experience, enable autocompletion on Brew. ⚠️
       You need to enable autocompletion just once for Brew. If it is already enabled, you can skip this part.
 
       ▪ For Bash users:
-      `brew install bash-completion` and follow the printed \"Caveats\" section. Example \"Caveats\" instructions:
-        Add the following line to your ~/.bash_profile:
-        [[ -r \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\" ]] && . \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\"
-        !! Note that paths may differ depending on your installation, so you should follow the Caveats section on your system."
+        1) `brew install bash-completion` and follow the printed \"Caveats\" section. Example \"Caveats\" instructions:
+           Add the following line to your ~/.bash_profile:
+           # !! Note that paths may differ depending on your installation, so you should follow the Caveats section on your system.
+           [[ -r \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\" ]] && . \"/home/ubuntu/.linuxbrew/etc/profile.d/bash_completion.sh\"
+        2) `source ~/.bash_profile` 
 
       ▪ For Zsh users:
       Follow https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
