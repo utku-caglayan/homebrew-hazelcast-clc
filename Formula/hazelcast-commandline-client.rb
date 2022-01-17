@@ -20,6 +20,9 @@ class HazelcastCommandlineClient < Formula
   end
 
   def post_install
+    ohai "Example usages:
+* `hzc` - start an interactive shell 🚀
+* `hzc map --name my-map put --key hello --value world` - put entry into map"
     completion_warning = <<~EOS
       ⚠️  To have superior experience, enable autocompletion on Brew. ⚠️
       You need to enable autocompletion just once for Brew. If it is already enabled, you can skip this part.
@@ -36,10 +39,6 @@ class HazelcastCommandlineClient < Formula
 
     EOS
     print completion_warning
-
-    ohai "Example usages:
-* `hzc` - start an interactive shell 🚀
-* `hzc map --name my-map put --key hello --value world` - put entry into map"
   end
 
   test do
