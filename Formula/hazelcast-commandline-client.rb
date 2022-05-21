@@ -4,6 +4,12 @@ class HazelcastCommandlineClient < Formula
   url "https://github.com/hazelcast/hazelcast-commandline-client/archive/refs/tags/v0.1.0-preview.2.tar.gz"
   sha256 "2a8d33a02f9069bfff681e790d64bed9e810bae94469c1d4336132ebf2281332"
 
+  bottle do
+    root_url "https://github.com/utku-caglayan/homebrew-hazelcast-clc/releases/download/hazelcast-commandline-client-0.1.0-pre"
+    sha256 cellar: :any_skip_relocation, big_sur:      "1f7966ab791d4185a3c3f4db9242e5a303578781f423dc4c670a05a3ab192a20"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ee2f64508589c54bf2f34cc924c279ba04994953b6738fa28884a466670eb5ea"
+  end
+
   depends_on "go" => :build
 
   def install
